@@ -7,14 +7,14 @@ import numpy as np
 
 print("CH2.2")
 
-if not os.path.exists("the-verdict.txt"):
+if not os.path.exists("01_main-chapter-code/the-verdict.txt"):
     url = ("https://raw.githubusercontent.com/rasbt/"
            "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
            "the-verdict.txt")
-    file_path = "the-verdict.txt"
+    file_path = "01_main-chapter-code/the-verdict.txt"
     urllib.request.urlretrieve(url, file_path)
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 
 print("Total number of character:", len(raw_text))
@@ -154,7 +154,7 @@ print(strings)
 
 print("CH2.6")
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 enc_text = tokenizer.encode(raw_text)
 print(len(enc_text))
@@ -221,7 +221,7 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
     return dataloader
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 
 dataloader = create_dataloader_v1(
@@ -301,14 +301,14 @@ import numpy as np
 
 print("CH2.2")
 
-if not os.path.exists("the-verdict.txt"):
+if not os.path.exists("01_main-chapter-code/the-verdict.txt"):
     url = ("https://raw.githubusercontent.com/rasbt/"
            "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
            "the-verdict.txt")
-    file_path = "the-verdict.txt"
+    file_path = "01_main-chapter-code/the-verdict.txt"
     urllib.request.urlretrieve(url, file_path)
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 
 print("Total number of character:", len(raw_text))
@@ -448,7 +448,7 @@ print(strings)
 
 print("CH2.6")
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 enc_text = tokenizer.encode(raw_text)
 print(len(enc_text))
@@ -515,7 +515,7 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
     return dataloader
 
-with open("the-verdict.txt", "r", encoding="utf-8") as f:
+with open("01_main-chapter-code/the-verdict.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 
 dataloader = create_dataloader_v1(
